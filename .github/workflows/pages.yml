@@ -43,7 +43,6 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          default_author: github_actions
           message: '[auto] Compile Tailwind'
           add: 'site/static/*.css'
 
