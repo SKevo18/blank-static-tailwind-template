@@ -40,14 +40,6 @@ jobs:
           npm ci
           bash compile.sh
 
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
-          message: '[auto] Update Tailwind CSS'
-          add: 'site/static/*.css'
-
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
