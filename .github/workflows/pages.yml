@@ -27,17 +27,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'npm'
-          cache-dependency-path: 'tailwind/package-lock.json'
 
       - name: Compile Tailwind
         run: |
           cd ./tailwind
-          npm ci
           bash compile.sh
 
       - name: Commit changes
