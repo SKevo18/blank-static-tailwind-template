@@ -1,8 +1,6 @@
 {
     "dependencies": {
-        "autoprefixer": "*",
         "clean-css-cli": "*",
-        "postcss": "*",
         "tailwindcss": "*"
     }
 }
